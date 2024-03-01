@@ -11,3 +11,12 @@
 h1 {
   font-size: clamp(24px, 7vw, 164px);
 }
+
+/* WEBKIT */
+::-webkit-scrollbar {
+  @apply w-[6px] bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#EFEFEF] rounded-md mx-2;
+}
