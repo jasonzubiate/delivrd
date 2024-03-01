@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.0",
     "@studio-freight/react-lenis": "^0.0.45",
     "geist": "^1.2.2",
+    "gsap": "^3.12.5",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"
