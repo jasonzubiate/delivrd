@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LenisContext from "@/context/lenis-context";
-
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-bridal-health">
       <body className={inter.className}>
-        <LenisContext>{children}</LenisContext>
+        <LenisContext>
+          <Header />
+          {children}
+        </LenisContext>
       </body>
     </html>
   );
