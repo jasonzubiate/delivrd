@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-bridal-health">
+    <html lang="en" className="bg-bridal-health text-demo-smoke">
       <body className={inter.className}>
         <LenisContext>
           <Header />
