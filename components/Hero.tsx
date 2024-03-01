@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import ScrollButton from "./BottomNav";
 
 export default function Hero() {
   const ref1 = useRef(null);
@@ -57,6 +58,7 @@ export default function Hero() {
           muted
           className="h-[600px] md:h-screen w-full object-cover object-center"
         />
+        <ScrollButton />
       </div>
     </section>
   );

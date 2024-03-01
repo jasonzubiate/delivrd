@@ -16,6 +16,17 @@ h1 {
   @apply overflow-hidden;
 }
 
+.arrow-icon {
+  @apply hover:fill-bridal-health;
+}
+
+.transparent-button {
+  @apply bg-bridal-health bg-opacity-50 hover:text-bridal-health hover:bg-demo-smoke hover:bg-opacity-100 transition-all duration-500;
+}
+
+.transparent-button:hover .icon {
+  @apply: text-bridal-health;
+}
 /* WEBKIT */
 ::-webkit-scrollbar {
   @apply w-[6px] bg-transparent;
