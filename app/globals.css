@@ -9,7 +9,11 @@
 }
 
 h1 {
-  font-size: clamp(24px, 7vw, 164px);
+  font-size: clamp(24px, 9vw, 164px);
+}
+
+.mask {
+  @apply overflow-hidden;
 }
 
 /* WEBKIT */
