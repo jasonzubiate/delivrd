@@ -3,6 +3,7 @@ import "./globals.css";
 import LenisContext from "@/context/lenis-context";
 import Header from "@/components/Header";
 import { constructMetaData } from "@/utils/metadata";
+import Preloader from "@/components/Preloader";
 
 export const metadata = constructMetaData();
 
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" className="bg-bridal-health text-demo-smoke">
       <body className={inter.className}>
         <LenisContext>
+          <Preloader />
           <Header />
           {children}
         </LenisContext>

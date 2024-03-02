@@ -16,6 +16,7 @@ export default function Hero() {
     tl.from(ref1.current, {
       yPercent: 100,
       duration: 1,
+      delay: 3,
     });
     tl.from(
       ref2.current,

@@ -24,8 +24,7 @@ export default function ScrollIndicator() {
     };
   }, []);
 
-  const formattedPercentage =
-    scrollPercentage < 10 ? `0${scrollPercentage}` : scrollPercentage;
+  const formattedPercentage = Math.max(0, Math.min(100, scrollPercentage));
 
   return (
     <p className={`${GeistMono.className} uppercase text-sm text-demo-smoke`}>
