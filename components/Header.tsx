@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GeistMono } from "geist/font/mono";
+import ScrollIndicator from "./ScrollIndicator";
 
 export default function Header() {
   return (
@@ -7,9 +8,7 @@ export default function Header() {
       <Link href={"/"} className="uppercase text-sm text-demo-smoke">
         Delivrd
       </Link>
-      <p className={`${GeistMono.className} uppercase text-sm text-demo-smoke`}>
-        (Scroll 0%)
-      </p>
+      <ScrollIndicator />
     </header>
   );
 }
