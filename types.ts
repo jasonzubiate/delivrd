@@ -7,26 +7,9 @@ export interface RevealedImage {
 export interface Label {
   id: string;
   name: string;
-  url: string | null;
-  description: string;
-  genres: string[];
-  submissionMethod: string | null;
-  contactInfo: ContactInfo;
-  location: string | null;
+  url: string;
   img: string;
-  featuredArtists: string[];
-  accepting: boolean;
-}
-
-export interface ContactInfo {
-  email: string | null;
-  socialMedia: SocialMedia;
-}
-
-export interface SocialMedia {
-  instagram: string | null;
-  twitter: string | null;
-  youtube: string | null;
+  owner: string;
 }
 
 export interface LabelCardListProps {
@@ -35,5 +18,4 @@ export interface LabelCardListProps {
 
 export interface LabelCardProps {
   label: Label;
-
 }
