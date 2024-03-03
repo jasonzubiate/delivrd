@@ -4,6 +4,7 @@ import LenisContext from "@/context/lenis-context";
 import Header from "@/components/Header";
 import { constructMetaData } from "@/utils/metadata";
 import Preloader from "@/components/Preloader";
+import CursorDot from "@/components/CursorDot";
 
 export const metadata = constructMetaData();
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <LenisContext>
           <Preloader />
+          <CursorDot />
           <Header />
           {children}
         </LenisContext>
