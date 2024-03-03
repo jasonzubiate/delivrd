@@ -27,6 +27,19 @@ h1 {
 .transparent-button:hover .icon {
   @apply: text-bridal-health;
 }
+
+.label-card {
+  @apply relative flex justify-between items-center w-full px-4 md:px-6 py-8 border-b border-ashen-taupe transition-all duration-300 cursor-pointer hover:bg-demo-smoke hover:text-bridal-health;
+}
+
+.label-card-img {
+  @apply absolute size-[150px] lg:size-[200px] object-cover object-center ml-[60%] mb-[8rem] hidden transition-all duration-1000 cursor-pointer rounded-md overflow-hidden;
+}
+
+.label-card:hover .label-card-img {
+  @apply md:block;
+}
+
 /* WEBKIT */
 ::-webkit-scrollbar {
   @apply w-[6px] bg-transparent;

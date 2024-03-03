@@ -4,7 +4,7 @@ import ScrollIndicator from "./ScrollIndicator";
 
 export default function Header() {
   return (
-    <header className="flex justify-between w-full p-4 md:p-5 fixed">
+    <header className="flex justify-between w-full p-4 md:p-6 fixed">
       <Link href={"/"} className="uppercase text-sm text-demo-smoke">
         Delivrd
       </Link>
