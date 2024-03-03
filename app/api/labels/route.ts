@@ -5,7 +5,6 @@ export async function GET() {
   console.log(process.env.SUPABASE_API_KEY);
   try {
     const { data: labels, error } = await supabase.from("labels").select();
-    console.log(labels);
 
     if (error) {
       return Response.json(
