@@ -19,3 +19,9 @@ export interface LabelCardListProps {
 export interface LabelCardProps {
   label: Label;
 }
+
+export type FormFields = {
+  name: string;
+  link: string;
+  instagram: string;
+};
