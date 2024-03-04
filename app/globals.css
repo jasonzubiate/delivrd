@@ -12,6 +12,10 @@ h1 {
   font-size: clamp(24px, 9vw, 164px);
 }
 
+h2 {
+  font-size: clamp(20px, 6vw, 96px);
+}
+
 .mask {
   @apply overflow-hidden;
 }
@@ -29,15 +33,30 @@ h1 {
 }
 
 .label-card {
-  @apply relative flex justify-between items-center w-full px-4 md:px-6 py-8 border-b border-ashen-taupe transition-all duration-300 cursor-pointer hover:bg-demo-smoke hover:text-bridal-health;
+  @apply relative flex justify-between items-center w-full px-4 py-6 md:px-6 md:py-10 border-b border-ashen-taupe transition-colors duration-500 cursor-pointer hover:bg-demo-smoke;
+}
+
+.label-card h4 {
+  @apply text-lg md:text-3xl lg:text-5xl uppercase font-semibold lg:tracking-tight transition-all duration-500;
 }
 
 .label-card-img {
-  @apply absolute size-[150px] lg:size-[200px] object-cover object-center ml-[60%] mb-[8rem] hidden transition-all duration-1000 cursor-pointer rounded-md overflow-hidden;
+  @apply absolute size-[150px] lg:size-[200px] object-cover object-center ml-[60%] mb-[8rem] hidden transition-all duration-1000 cursor-pointer rounded-md overflow-hidden pointer-events-none;
+}
+
+.label-card-details {
+  @apply flex flex-col items-end text-[10px] md:text-xs lg:text-sm leading-none lg:leading-tight transition-all duration-500;
 }
 
 .label-card:hover .label-card-img {
   @apply md:block;
+}
+
+.label-card:hover h4 {
+  @apply text-bridal-health translate-x-3;
+}
+.label-card:hover .label-card-details {
+  @apply text-bridal-health -translate-x-3;
 }
 
 /* WEBKIT */
