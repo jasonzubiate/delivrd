@@ -37,7 +37,7 @@ export default function Hero() {
   });
 
   return (
-    <section id="hero" className="flex flex-col pt-48 pb-32">
+    <section id="hero" className="flex flex-col pt-48">
       <div className="flex flex-col gap-3">
         <h1 className="uppercase font-semibold leading-[85%] tracking-tighter px-4 md:px-6">
           <div className="mask">
