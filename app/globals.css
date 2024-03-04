@@ -18,6 +18,10 @@ h2 {
 
 input {
   @apply bg-transparent text-ashen-taupe border-b border-ashen-taupe pb-4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 input::placeholder {
