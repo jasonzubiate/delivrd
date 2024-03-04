@@ -1,8 +1,6 @@
 import supabase from "@/lib/initSupabase";
 
 export async function GET() {
-  console.log(process.env.SUPABASE_URL);
-  console.log(process.env.SUPABASE_API_KEY);
   try {
     const { data: labels, error } = await supabase.from("labels").select();
 
