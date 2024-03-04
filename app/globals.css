@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(56px, 6vw, 96px);
+  font-size: clamp(48px, 6vw, 96px);
 }
 
 input {
