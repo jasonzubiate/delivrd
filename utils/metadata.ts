@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export function constructMetaData({
-  title = "DELIVRD | Streamilined Demo Submissions",
+  title = "DELIVRD | Streamlined Demo Submissions",
   description = "Delivrd is a platform for producers to discover demo submission links for EDM's hottest labels.",
   image = "/ogimage.png",
   icons = "/favicon.ico",
