@@ -57,6 +57,7 @@ export default function Hero() {
           autoPlay
           loop
           muted
+          playsInline
           className="h-[600px] md:h-screen w-full object-cover object-center"
         />
         <ScrollButton />
