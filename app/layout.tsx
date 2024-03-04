@@ -6,6 +6,7 @@ import { constructMetaData } from "@/utils/metadata";
 import Preloader from "@/components/Preloader";
 import CursorDot from "@/components/CursorDot";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = constructMetaData();
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </LenisContext>
+        <Analytics/>
       </body>
     </html>
   );
