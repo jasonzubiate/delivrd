@@ -69,10 +69,10 @@ input:focus {
 }
 
 .label-card:hover h4 {
-  @apply text-bridal-health translate-x-3;
+  @apply text-bridal-health translate-x-1 md:translate-x-3;
 }
 .label-card:hover .label-card-details {
-  @apply text-bridal-health -translate-x-3;
+  @apply text-bridal-health -translate-x-1 md:-translate-x-3;
 }
 
 #contact p {
